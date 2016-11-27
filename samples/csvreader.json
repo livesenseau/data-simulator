@@ -1,0 +1,87 @@
+{
+  "application": {
+    "name": "csvreader",
+    "version": "1.0.0",
+    "type": "csv"
+  },
+  "output": {
+    "type": "file",
+    "prefix": "16400084_",
+    "suffix": "yyyymmddhhmms",
+    "folder": "/tmp/tmp1"
+  },
+  "delimiter": ",",
+  "length": 50,
+  "schedule": {
+    "cron": "* * * * * *"
+  },
+  "header": {
+    "title": ["Timestamp", "TZ", "DOCon (mg/l)", "DOsat (%)", "Temp (degC)", "Conductivity (uS/cm)", "Depth (m)", "pH (unit)", "ORP (mV)", "Battery (V)"],
+    "quotes": true
+  },
+  "rows": [{
+    "type": "date",
+    "options": {
+      "format": "yyyy/mm/dd HH:MM:ss.l"
+    }
+  }, {
+    "type": "string",
+    "options": {
+      "length": 2
+    }
+  }, {
+    "type": "int",
+    "options": {
+      "min": 0,
+      "max": 0
+    }
+  }, {
+    "type": "int",
+    "options": {
+      "min": 0,
+      "max": 0
+    }
+  }, {
+    "type": "float",
+    "options": {
+      "min": 0,
+      "max": 100,
+      "fixed": 4
+    }
+  }, {
+    "type": "float",
+    "options": {
+      "min": -10,
+      "max": 10,
+      "fixed": 4
+    }
+  }, {
+    "type": "float",
+    "options": {
+      "min": 0,
+      "max": 100,
+      "fixed": 2
+    }
+  }, {
+    "type": "float",
+    "options": {
+      "min": 0,
+      "max": 100,
+      "fixed": 4
+    }
+  }, {
+    "type": "float",
+    "options": {
+      "min": 0,
+      "max": 100,
+      "fixed": 5
+    }
+  }, {
+    "type": "float",
+    "options": {
+      "min": 0,
+      "max": 100,
+      "fixed": 5
+    }
+  }]
+}

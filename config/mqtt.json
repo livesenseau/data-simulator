@@ -1,0 +1,35 @@
+{
+    "application": {
+        "name": "mqtt-simulator",
+        "version": "1.0.0",
+        "type": "mqtt"
+    },
+    "message": {
+        "cid": 12123,
+        "sensors": [
+            {
+                "name": "temperature",
+                "idx": 1,
+                "value": 0
+            }
+        ]
+    },
+    "schedule": {
+        "cron": "1 * * * * *"
+    },
+    "broker": {
+        "uri": "tcp://james.local",
+        "topic": "/device/livesense/temperature"
+    },
+    "replaces": [
+        {
+            "type": "float",
+            "expression": "sensors.0.value",
+            "options": {
+                "min": 10,
+                "max": 30,
+                "fixed": 2
+            }
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "data-simulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "async": "1.5.2",
+    "cron": "1.1.0",
+    "csv-generator": "git+ssh://git@bitbucket.org/LiveSenseRep/csv-generator.git",
+    "fast-csv": "1.0.0",
+    "jsmodbus": "0.5.1",
+    "lodash": "4.6.1",
+    "modbus-stack": "0.2.1",
+    "modbus-tcp": "0.4.5",
+    "mqtt": "2.1.3",
+    "mqtt-generator": "git+https://github.com/calvernaz/mqtt-generator.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cesar Alvernaz <cesar@livesense.com.au> (https://weirdloop.org)",
+  "license": "Apache-2.0"
+}

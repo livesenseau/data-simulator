@@ -1,0 +1,8 @@
+{
+  "application": {
+    "name": "modbus",
+    "version": "1.0.0",
+    "type": "modbus"
+  },
+  "port": "6505"
+}
